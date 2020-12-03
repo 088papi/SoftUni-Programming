@@ -1,1 +1,1 @@
-This repo consists of task I did at SoftUni.
+This repo consists of tasks I did at SoftUni.
