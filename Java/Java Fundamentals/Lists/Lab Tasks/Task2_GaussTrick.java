@@ -2,7 +2,7 @@ import java.sql.ClientInfoStatus;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//100/100
 public class Task2_GaussTrick {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

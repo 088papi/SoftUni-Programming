@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//100/100
 public class Task2_FromLeftToRight {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -11,18 +11,26 @@ public class Task2_FromLeftToRight {
             String[] numbers = scanner.nextLine().split(" ");
             long leftNum = Long.parseLong(numbers[0]);
             long rightNum = Long.parseLong(numbers[1]);
-            leftSum = 0;
-            rightSum = 0;
-            while (leftNum != 0) {
-                leftSum += leftNum % 10;
-                leftNum /= 10;
-            }
-            while (rightNum != 0) {
-                rightSum += rightNum % 10;
-                rightNum /= 10;
+             long sum = 0;
+             
+            if (leftNum < rightNum) {
+                sum = 0;
+                while (rightNum != 0) {
+                    sum += rightNum % 10;
+                    rightNum /= 10;
+
+                }
+                System.out.println(Math.abs(sum));
+            } else {
+                sum = 0;
+                while (leftNum != 0) {
+                    sum += leftNum % 10;
+                    leftNum /= 10;
+
+                }
+                System.out.println(Math.abs(sum));
             }
 
-            System.out.println((Math.abs(Math.max(leftSum, rightSum))));
         }
     }
 }

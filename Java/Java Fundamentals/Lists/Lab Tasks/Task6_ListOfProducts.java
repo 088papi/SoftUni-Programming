@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
-// ПРОВЕРИ
-public class Task_ListOfProducts {
+// 100/100
+public class Task6_ListOfProducts {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

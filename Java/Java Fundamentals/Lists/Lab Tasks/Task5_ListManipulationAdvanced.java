@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-// Submit in Judge
+//100/100
 public class Task5_ListManipulationAdvanced {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -74,6 +74,24 @@ public class Task5_ListManipulationAdvanced {
                                 System.out.print(numbers.get(i) + " ");
                             }
                         }
+                        System.out.println();
+                    } else if (commands[1].equals(">")) {
+                        int currentNumber = Integer.parseInt(commands[2]);
+
+                        for (int i = 0; i < numbers.size(); i++) {
+                            if (numbers.get(i) > currentNumber) {
+                                System.out.print(numbers.get(i) + " ");
+                            }
+                        }
+                        System.out.println();
+                    } else if (commands[1].equals("<=")) {
+                        int currentNumber = Integer.parseInt(commands[2]);
+                        for (int i = 0; i < numbers.size(); i++) {
+                            if (numbers.get(i) <= currentNumber) {
+                                System.out.print(numbers.get(i) + " ");
+                            }
+                        }
+                        System.out.println();
                     }
 
 
@@ -83,17 +101,5 @@ public class Task5_ListManipulationAdvanced {
             line = scanner.nextLine();
         }
 
-    }
-
-    private static List<Integer> parseLineOfNumbers(Scanner scanner) {
-        String line = scanner.nextLine();
-        String[] numbersAsStrings = line.split(" ");
-
-        List<Integer> numbers = new ArrayList<>();
-        for (String s : numbersAsStrings) {
-            int number = Integer.parseInt(s);
-            numbers.add(number);
-        }
-        return numbers;
     }
 }

@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 import java.text.DecimalFormat;
 import java.util.*;
 
-// submit in Judge
+//100/100
 public class Task1_SumAdjacentEqualNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

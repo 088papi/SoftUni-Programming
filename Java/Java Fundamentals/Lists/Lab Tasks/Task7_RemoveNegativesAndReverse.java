@@ -1,8 +1,8 @@
 import java.util.*;
 import java.util.stream.Collectors;
 
-// Submit in Judge
-public class Task6_RemoveNegativesAndReverse {
+//100/100
+public class Task7_RemoveNegativesAndReverse {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
