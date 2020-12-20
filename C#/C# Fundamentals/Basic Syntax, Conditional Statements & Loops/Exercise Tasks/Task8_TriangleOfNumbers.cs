@@ -1,5 +1,5 @@
 ﻿using System;
-
+//100/100
 namespace Task8_TriangleOfNumbers
 {
     class Task8_TriangleOfNumbers
