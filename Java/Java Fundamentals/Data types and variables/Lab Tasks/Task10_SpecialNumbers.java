@@ -1,31 +1,31 @@
 import java.util.Scanner;
-//100/100
-public class Task10_SpecialNumbers {
+
+public class Task12_RefractorSpecialNumbers {
     public static void main(String[] args) {
+
+
         Scanner scanner = new Scanner(System.in);
+        int n = Integer.parseInt(scanner.nextLine());
+        int sum = 0;
+        int prime = 0;
+        boolean isPrime = false;
 
-int n = Integer.parseInt(scanner.nextLine());
+        for (int i = 1; i <= n; i++) {
 
-        for (int i = 1; i <= n ; i++) {
-
-            int sumOfDigits = 0;
-
+            prime = i;
             while (i > 0) {
-
-                sumOfDigits+= i % 10;
-                // по този начин намиране последната цифра от числото
-                i /= 10;
-
+                sum += i % 10;
+                i = i / 10;
             }
-if (sumOfDigits == 5 || sumOfDigits == 7 || sumOfDigits == 11 ) {
+            if (isPrime = (sum == 5) || (sum == 7) || (sum == 11)) {
 
-}
+                System.out.printf("%d -> True %n", prime);
+            } else {
+                System.out.printf("%d -> False%n", prime);
+            }
+            sum = 0;
+            i = prime;
         }
 
-        }
-
+    }
 }
-
-
-
-
