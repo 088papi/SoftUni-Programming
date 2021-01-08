@@ -12,7 +12,10 @@ public class Ex02_EqualSumsEvenOddPosition {
             int oddSum = 0;
             int evenSum = 0;
 
-            String currentNum = "" + i;  //Integer.toString(int) --> прави int в стринг
+            String currentNum = "" + i; 
+
+ //Integer.toString(int) --> прави int в стринг
+
             for (int j = 0; j < 6; j++) {
                 // char currentChar = currentNum.charAt(j);
                 int currentNumAtPosition = Integer.parseInt("" + currentNum.charAt(j));
