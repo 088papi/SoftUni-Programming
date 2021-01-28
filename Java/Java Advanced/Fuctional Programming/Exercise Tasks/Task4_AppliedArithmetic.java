@@ -16,9 +16,9 @@ public class Task4_AppliedArithmetic {
 
         String command = scanner.nextLine();
 
-        Function<int[], int[]> add = e -> Arrays.stream(e).map(num -> num++).toArray();
-        Function<int[], int[]> subtract = e -> Arrays.stream(e).map(num -> num--).toArray();
-        Function<int[], int[]> multiply = e -> Arrays.stream(e).map(num -> num * 2).toArray();
+        Function<int[], int[]> add = e -> Arrays.stream(e).map(num -> num+=1).toArray();
+        Function<int[], int[]> subtract = e -> Arrays.stream(e).map(num -> num-=1).toArray();
+        Function<int[], int[]> multiply = e -> Arrays.stream(e).map(num -> num *= 2).toArray();
 
         Consumer<int[]> printer = e -> Arrays.stream(e).forEach(a -> System.out.print(a + " "));
 
