@@ -38,7 +38,7 @@ public class Task10_PredicateParty {
             System.out.println("Nobody is going to the party!");
         } else {
             Collections.sort(names);
-            System.out.println(names.toString().replaceAll("([\\[|\\]])", "") + "are going to the party!");
+            System.out.println(names.toString().replaceAll("([\\[|\\]])", "") + " are going to the party!");
         }
     }
 
