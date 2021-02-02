@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -24,9 +23,9 @@ public class Main {
                 String[] cargoType = matcher.group("cargoInfo").split(" ");
                 String[] tires = matcher.group("tires").split(" ");
 
-                Engine engine = getEngine(engineData);
-                Cargo cargo = getCargo(cargoType);
-                List<Tire> tyres = getTyres(tires);
+                Engine engine = setEngine(engineData);
+                Cargo cargo = setCargo(cargoType);
+                List<Tire> tyres = setTyres(tires);
 
                 Car car = new Car();
 
@@ -76,7 +75,11 @@ public class Main {
         }
     }
 
-    private static Engine getEngine(String[] engineData) {
+
+
+
+
+    private static Engine setEngine(String[] engineData) {
         Engine engine = new Engine();
 
         int speed = Integer.parseInt(engineData[0]);
@@ -86,7 +89,7 @@ public class Main {
         return engine;
     }
 
-    private static Cargo getCargo(String[] cargoType) {
+    private static Cargo setCargo(String[] cargoType) {
         Cargo cargo = new Cargo();
         int weight = Integer.parseInt(cargoType[0]);
         String type = cargoType[1];
@@ -95,7 +98,7 @@ public class Main {
         return cargo;
     }
 
-    private static List<Tire> getTyres(String[] tires) {
+    private static List<Tire> setTyres(String[] tires) {
         List<Tire> tyres = new ArrayList<>();
         Tire tire1 = new Tire();
         Tire tire2 = new Tire();
@@ -105,19 +108,23 @@ public class Main {
         double pTyre1 = Double.parseDouble(tires[0]);
         int ageTyre1 = Integer.parseInt(tires[1]);
         tire1.setPressure(pTyre1);
+
         tire1.setAge(ageTyre1);
         double pTyre2 = Double.parseDouble(tires[2]);
         int ageTyre2 = Integer.parseInt(tires[3]);
         tire2.setPressure(pTyre2);
         tire2.setAge(ageTyre2);
+
         double pTyre3 = Double.parseDouble(tires[4]);
         int ageTyre3 = Integer.parseInt(tires[5]);
         tire3.setPressure(pTyre3);
         tire3.setAge(ageTyre3);
+
         double pTyre4 = Double.parseDouble(tires[6]);
         int ageTyre4 = Integer.parseInt(tires[7]);
         tire4.setPressure(pTyre4);
         tire4.setAge(ageTyre4);
+
         tyres.add(tire1);
         tyres.add(tire2);
         tyres.add(tire3);
