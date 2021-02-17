@@ -39,7 +39,7 @@ public class Bag {
 
     public Present heaviestPresent() {
         Present present = null;
-        double heaviest = 0;
+        double heaviest = 0.0;
         for (Present datum : data) {
             if (datum.getWeight() > heaviest) {
                 heaviest = datum.getWeight();
@@ -65,8 +65,7 @@ public class Bag {
 
     public String report(){
         StringBuilder sb = new StringBuilder();
-        sb.append(this.color.substring(0,1).toUpperCase(Locale.ROOT))
-                .append(this.color.substring(1,this.color.length()))
+        sb.append(this.color)
                 .append(" bag contains:").append(System.lineSeparator());
         for (Present datum : data) {
             sb.append(datum.toString());
