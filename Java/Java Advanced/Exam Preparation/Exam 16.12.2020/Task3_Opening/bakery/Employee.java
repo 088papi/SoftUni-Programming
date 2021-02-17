@@ -38,6 +38,6 @@ public class Employee {
 
     @Override
     public String toString(){
-        return "Employee: " + name + ", " + age + ", (" + country + ")";
+        return "Employee: " + name + ", " + age + " (" + country + ")";
     }
 }
