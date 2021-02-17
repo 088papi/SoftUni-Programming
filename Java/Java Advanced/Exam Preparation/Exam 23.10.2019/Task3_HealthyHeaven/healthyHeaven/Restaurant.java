@@ -20,7 +20,7 @@ public class Restaurant {
        return this.data.removeIf(e-> e.getName().equals(name));
     }
 
-    public String getHealthiestSalad(){
+    public Salad getHealthiestSalad(){
         Salad healthiestSalad = null;
         int healthiest = Integer.MAX_VALUE;
         for (Salad datum : this.data) {
@@ -29,7 +29,7 @@ public class Restaurant {
                 healthiestSalad = datum;
             }
         }
-        return healthiestSalad.getName();
+        return healthiestSalad;
     }
 
 

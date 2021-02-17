@@ -21,6 +21,6 @@ public class Vegetable {
 
     @Override
     public String toString(){
-        return String.format("- %s have %d calories", this.name, this.calories);
+        return String.format(" - %s have %d calories", this.name, this.calories);
     }
 }
