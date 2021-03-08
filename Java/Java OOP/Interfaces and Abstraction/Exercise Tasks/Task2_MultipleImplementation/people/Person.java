@@ -2,6 +2,6 @@ package people;
 
 public interface Person {
 
-    public String getName();
-    public int getAge();
+    String getName();
+    int getAge();
 }
